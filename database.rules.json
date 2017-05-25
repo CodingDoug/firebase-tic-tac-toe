@@ -1,0 +1,29 @@
+{
+  "rules": {
+    "commands": {
+      "$uid": {
+        ".read": false,
+        ".write": "$uid === auth.uid"
+      }
+    }
+    ,
+    "players": {
+      "$uid": {
+        ".read": true,
+        ".write": "$uid === auth.uid"
+      }
+    }
+    ,
+    "player_states": {
+      "$uid": {
+        ".read": "$uid === auth.uid",
+        ".write": false
+      }
+    }
+    ,
+    "games": {
+        ".read": true,
+        ".write": false
+    }
+  }
+}

@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8"/>
+
+    <script src="/__/firebase/3.9.0/firebase-app.js"></script>
+    <script src="/__/firebase/3.9.0/firebase-auth.js"></script>
+    <script src="/__/firebase/3.9.0/firebase-database.js"></script>
+    <script src="/__/firebase/init.js"></script>
+    <script src="js/game.js"></script>
+
+    <link href="css/index.css" rel="stylesheet"/>
+</head>
+
+<body>
+
+<div id="login-screen" class="screen" style="display: none">
+    <h3>This game needs a snazzy name.</h3>
+    <button id="btn-sign-in">Sign In</button>
+</div>
+
+
+<div id="options-screen" class="screen" style="display: none">
+    <div class="welcome"></div>
+    <button id="btn-play">Play</button>
+    <button id="btn-sign-out">Sign Out</button>
+</div>
+
+
+<div id="matching-screen" class="screen" style="display: none">
+    <div>Looking for an opponent...</div>
+</div>
+
+
+<div id="game-screen" class="screen" style="display: none">
+    <div class="players">
+        <div class="player player1">
+            <img class="profile-pic" alt="Player 1 Picture"/>
+            <div class="name"></div>
+        </div>
+        <div class="player player2">
+            <img class="profile-pic" alt="Player 2 Picture"/>
+            <div class="name"></div>
+        </div>
+    </div>
+
+    <div class="game-board">
+        <div class="row">
+            <div class="sp-x0-y2"><div class="piece"></div></div>
+            <div class="sp-x1-y2"><div class="piece"></div></div>
+            <div class="sp-x2-y2"><div class="piece"></div></div>
+        </div>
+        <div class="row">
+            <div class="sp-x0-y1"><div class="piece"></div></div>
+            <div class="sp-x1-y1"><div class="piece"></div></div>
+            <div class="sp-x2-y1"><div class="piece"></div></div>
+        </div>
+        <div class="row">
+            <div class="sp-x0-y0"><div class="piece"></div></div>
+            <div class="sp-x1-y0"><div class="piece"></div></div>
+            <div class="sp-x2-y0"><div class="piece"></div></div>
+        </div>
+    </div>
+
+    <div class="message"></div>
+</div>
+
+</body>
+
+</html>
